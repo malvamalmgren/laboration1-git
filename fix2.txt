@@ -1,1 +1,32 @@
-
+cd..
+cd .\Malva\IdeaProjects\
+git init laboration1-git
+cd .\laboration1-git\
+nano README.md
+git add README.md
+git commit -m "Initial commit"
+git switch -c feature1
+nano README.md (för att ändra i filen)
+git commit -m "Add dog and change moose"
+git switch main
+nano README.md (för att ändra i filen)
+git commit -m "Change moose to mahmut"
+git merge feature1
+nano README.md (för att resolva)
+git add README.md
+git commit -m "Merge feature1"
+git tag extinct
+git reset --hard aa9f99dc5e5549b5a6fe715d87bd4e759a14a224
+git branch feature2
+nano README.md
+git add README.md
+git commit -m "Change to capital first letter"
+git switch feature2
+echo > fix1.txt
+echo > fix2.txt
+git add fix1.txt
+git commit -m "Add fix1.txt"
+git add fix2.txt
+git commit -m "Add fix2.txt"
+git switch main
+git cherry-pick a7e6de55
